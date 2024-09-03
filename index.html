@@ -8,15 +8,26 @@
 </head>
 <body>
 <header>
-<img src="logo.jpg" alt="Pother Pathok Logo" class="logo">
+  <!-- Use a root-relative path to ensure the logo works as a home button on all pages -->
+  <a href="/index.html">
+    <img src="logo.jpg" alt="Pother Pathok Logo" class="logo">
+  </a>
+  
+
 <nav>
 <a href="index.html" class="nav-btn">Home</a>
 <a href="contact.html" class="nav-btn">Contact</a>
 <a href="blog.html" class="nav-btn">Blog</a>
-<form action="#" method="get" class="search-form">
-<input type="text" name="search" placeholder="Search...">
-<button type="submit">Search</button>
-</form>
+<form id="search-form"
+action="search_results.html"
+method="GET">
+      <input type="text" 
+    id="searchInput" name="query"
+    placeholder="Search..."
+    required>
+      <button
+      type="submit">Search</button>
+
 </nav>
 </header>
 <main>
