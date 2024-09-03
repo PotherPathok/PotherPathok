@@ -1,0 +1,90 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #b59cff, #f4f0ff); /* Light to darker purple gradient */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4a3f77; /* Darker purple for header */
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 100px; /* Size of the logo */
+    width: 100px;
+    border-radius: 50%;
+}
+
+nav .nav-btn {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+h1 {
+    color: #333;
+    font-size: 4.2rem;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #4a3f77;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.book-list, .blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book, .blog-post {
+    flex: 1 1 45%;
+    display: flex;
+    align-items: center; /* Align items vertically center */
+}
+
+.book-img {
+    max-width: 150px; /* Fixed width for consistency */
+    border-radius: 8px;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.book-details {
+    flex: 1; /* উইটনেস টু সারেন্ডার */
+}
+
+.book-details h3 {
+    margin: 0;
+    font-size: 1.4rem; /* Font size for title */
+}
+
+.book-details p {
+    font-size: 0.9rem; /* Font size for details */
+}
+
+.btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #6a5faa; /* Button background color */
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem; /* Font size for buttons */
+    margin-top: 10px; /* Space above buttons */
+}
+
+.btn.more-info {
+    background-color: #4a3f77; /* Different button color for "More Info" */
+}
+
+header, .btn, .book-details {
+    box-sizing: border-box;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin - Manage Books</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<img src="logo.jpg" alt="Pother Pathok Logo" class="logo">
+<nav>
+<a href="index.html" class="nav-btn">Home</a>
+<a href="admin-books.html" class="nav-btn">Manage Books</a>
+<a href="admin-blogs.html" class="nav-btn">Manage Blogs</a>
+<a href="contact.html" class="nav-btn">Contact</a>
+<form action="#" method="get" class="search-form">
+<input type="text" name="search" placeholder="Search...">
+<button type="submit">Search</button>
+</form>
+</nav>
+</header>
+<main>
+<h1>Manage Books</h1>
+<form action="submit-book.php" method="post" enctype="multipart/form-data">
+<label for="title">Book Title:</label>
+<input type="text" id="title" name="title" required>
+
+<label for="details">Details:</label>
+<textarea id="details" name="details" required></textarea>
+
+<label for="book-image">Book Image:</label>
+<input type="file" id="book-image" name="book-image" required>
+
+<button type="submit">Add Book</button>
+</form>
+</main>
+</body>
+</html>
